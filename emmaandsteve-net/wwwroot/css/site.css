@@ -1,0 +1,158 @@
+﻿body, html, header {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("/images/engagement.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("/images/Highdown_Vineyard_-_Autumn.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("/images/mr-and-mrs.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("/images/Vineyard-Pic-Summer.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+    .caption .displayBox {
+        background-color: #111;
+        width: auto;
+    }
+
+.caption span.border {
+    
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+#header {
+    width: 100%;
+    background-color: gray;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+#nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#logo a {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#nav ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    list-style: none
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    color: black;
+    opacity: .6;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#nav .active a {
+    color: #fff;
+    opacity: 1;
+    border-bottom: 2px solid #fff
+}
+
+#nav a:hover {
+    color: #fff;
+    opacity: 1
+}
+
+.light {
+    color: #777;
+    background-color: white;
+    padding: 80px 80px 50px 80px;
+    text-align: justify;
+}
+
+.light > * {
+    color: #111;
+}
+
+.dark {
+    background-color:#282E34;
+    padding:80px 80px 50px 80px;
+    text-align: justify; 
+    color: #ffffff;
+}
+
+.dark > * {
+    color: #ffffff;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: inherit;
+}
+
+.nav > li > a {
+    margin: 10px;
+    padding: 0;
+}
